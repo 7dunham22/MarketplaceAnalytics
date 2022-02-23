@@ -1,0 +1,38 @@
+/* TBD */
+* {
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+#admin-view {
+  display: flex;
+  flex-direction: column;
+}
+
+#admin-view > h1 {
+  align-self: center;
+}
+
+#admin-products-display {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#new-product-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+#new-product-form > * {
+  padding: 5px;
+}
+
+td {
+  padding: 0 5px 5px;
+}
+
+.change-quantity {
+  width: 3em;
+}

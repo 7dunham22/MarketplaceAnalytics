@@ -1,0 +1,50 @@
+{
+  "name": "boilermaker",
+  "version": "1.0.0",
+  "description": "boilermaker",
+  "main": "index.js",
+  "scripts": {
+    "start": "node main",
+    "start-dev": "webpack -w & nodemon main",
+    "seed": "node seed.js"
+  },
+  "author": "David Dunham",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "express": "^4.17.3",
+    "http-server": "^14.1.0",
+    "morgan": "^1.10.0",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-router": "^6.2.1",
+    "react-router-dom": "^6.2.1",
+    "redux": "^4.1.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.4.1",
+    "sequelize": "^6.16.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/plugin-proposal-class-properties": "^7.16.7",
+    "@babel/plugin-transform-runtime": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^6.6.0",
+    "eslint": "^8.9.0",
+    "eslint-plugin-react": "^7.28.0",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  }
+}
