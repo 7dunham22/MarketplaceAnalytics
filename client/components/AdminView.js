@@ -2,6 +2,7 @@ import React from 'react';
 // import { connect } from 'react-redux';
 import AllProducts from './AllProducts';
 import NewProduct from './NewProduct';
+import ProductTreemap from './ProductTreemap';
 
 class AdminView extends React.Component {
   render() {
@@ -12,6 +13,7 @@ class AdminView extends React.Component {
           <AllProducts />
           <NewProduct />
         </div>
+        <ProductTreemap />
       </div>
     );
   }
