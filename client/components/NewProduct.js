@@ -9,7 +9,7 @@ class NewProduct extends React.Component {
     this.state = {
       name: '',
       category: 'miscellaneous',
-      quantity: 0,
+      quantity: 1,
       imageUrl: '',
     };
     this.productCategories = [

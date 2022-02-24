@@ -14,6 +14,11 @@ class AllProducts extends React.Component {
     this.changeQuantity = this.changeQuantity.bind(this);
   }
 
+  sortById(products) {
+    const sortedItems = products.sort((first, second) => first.id - second.id);
+    return sortedItems;
+  }
+
   changeQuantity(newProduct) {
     this.props.updateProduct(newProduct);
   }
@@ -32,6 +37,7 @@ class AllProducts extends React.Component {
   }
 
   render() {
+    const products = this.sortById(this.props.products);
     return this.loading ? (
       <h1>LOADING</h1>
     ) : (
@@ -46,7 +52,7 @@ class AllProducts extends React.Component {
               <th>Quantity</th>
               <th></th>
             </tr>
-            {this.props.products.map((product) => {
+            {products.map((product) => {
               return (
                 <tr key={product.id}>
                   <td>{product.id}</td>
