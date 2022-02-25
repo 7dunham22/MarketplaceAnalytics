@@ -4,6 +4,14 @@
   font-family: monospace;
 }
 
+app {
+  display: flex;
+}
+
+app > svg {
+  align-self: center;
+}
+
 #admin-view {
   display: flex;
   flex-direction: column;

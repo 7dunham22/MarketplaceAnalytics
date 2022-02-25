@@ -1,5 +1,4 @@
 import React from 'react';
-// import { connect } from 'react-redux';
 import AllProducts from './AllProducts';
 import NewProduct from './NewProduct';
 import ProductTreemap from './ProductTreemap';
