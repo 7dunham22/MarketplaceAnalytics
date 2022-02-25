@@ -7,7 +7,7 @@ const items = [
   {
     name: 'tomato',
     category: 'produce',
-    quantity: 40,
+    quantity: 30,
   },
   {
     name: 'orange',
@@ -17,12 +17,12 @@ const items = [
   {
     name: 'steak',
     category: 'meats',
-    quantity: 15,
+    quantity: 25,
   },
   {
     name: 'swordfish',
     category: 'seafood',
-    quantity: 3,
+    quantity: 10,
   },
 ];
 

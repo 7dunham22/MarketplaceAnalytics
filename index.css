@@ -4,11 +4,12 @@
   font-family: monospace;
 }
 
-app {
+#app {
   display: flex;
+  flex-direction: column;
 }
 
-app > svg {
+#app > svg {
   align-self: center;
 }
 

@@ -23,11 +23,15 @@ class ProductTreemap extends React.Component {
       path: (d) => d.name,
       value: (d) => d?.quantity,
       group: (d) => d.category,
-      label: (d) => d.category,
-      width: 1152,
-      height: 1152,
+      label: (d) => [d.name, d.quantity.toString()].join('\n'),
+      width: 1000,
+      height: 500,
     });
     const app = document.getElementById('app');
+    const prevChart = document.querySelector('svg');
+    if (prevChart) {
+      app.removeChild(prevChart);
+    }
     app.appendChild(chartNode);
   }
 

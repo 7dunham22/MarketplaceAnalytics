@@ -45,7 +45,7 @@ class NewProduct extends React.Component {
     this.setState({
       name: '',
       category: 'miscellaneous',
-      quantity: 0,
+      quantity: 1,
       imageUrl: '',
     });
   }
@@ -61,6 +61,7 @@ class NewProduct extends React.Component {
             name="name"
             value={this.state.name}
             onChange={this.handleChange}
+            required
           />
         </div>
         <div className="new-product-input">
@@ -104,7 +105,7 @@ class NewProduct extends React.Component {
         <input type="submit" value="Create" />
         <p>
           Note: Attempting to add an existing item will only alter the quantity
-          thereof given in the database.
+          thereof in the database.
         </p>
       </form>
     );
